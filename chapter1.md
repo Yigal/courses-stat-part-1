@@ -27,14 +27,15 @@ xp: 100
 <!-- Guidelines for contexts: https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
 
 `@instructions`
-<!-- Guidelines for instructions https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
-- Instruction 1
-- Instruction 2
+Classify the variables
 
 `@hint`
-<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
-- This is an example hint.
-- This is an example hint.
+- Quantitative variables are numbers
+  - Continuous variables have a meaningful value between any two values
+  - Discrete variables have values that are "next to each other" without any meaningful value in the middle
+- Categorical variables may be represented by numbers, but can just as easily be represented by other means
+  - Ordinal variables have a natural order. 
+  - Nominal variables can only be checked for equality or lack thereof.
 
 `@solution`
 ```{python}
@@ -133,14 +134,12 @@ xp: 100
 <!-- Guidelines for contexts: https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
 
 `@instructions`
-<!-- Guidelines for instructions https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
-- Instruction 1
-- Instruction 2
+Classify the variables
 
 `@hint`
-<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
-- This is an example hint.
-- This is an example hint.
+- Ratio variables can be divided (A is twice as heavy as B, so weight is a ratio variable)
+- Interval variables cannot be divided, but can be subtracted (such as the output of `new Date().getTime()` in JavaScript)
+- Categorical variables cannot even be subtracted
 
 `@solution`
 ```{python}
