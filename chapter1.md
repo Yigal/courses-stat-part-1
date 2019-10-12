@@ -122,6 +122,77 @@ xp: 50
 
 ---
 
+## Interval vs. ratio classification
+
+```yaml
+type: DragAndDropExercise
+key: 35391f1492
+xp: 100
+```
+
+<!-- Guidelines for contexts: https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
+
+`@instructions`
+<!-- Guidelines for instructions https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
+- Instruction 1
+- Instruction 2
+
+`@hint`
+<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
+- This is an example hint.
+- This is an example hint.
+
+`@solution`
+```{python}
+
+# Drag zone that holds all the options.
+# Specify an ID for this zone to use in SCTs.
+- id: variables
+  title: "Variables" # Title of your zone This is not shown with more than 2 zones.
+
+- id: ratio
+  title: "Ratio"
+  items: # Each drop zone has a list of items it contains. These will be shown in a random fashion.
+    - content: "Height in meters" # Name of an item. Feel free to use markdown.
+      id: height_m # ID of the item. This can be used in the SCTs.
+    - content: "Height in feet"
+      id: height_ft
+
+- id: interval
+  title: "Interval"
+  items:
+    - content: "Temperature in Centrigrade"
+      id: temp_c
+    - content: "Year that a country gained independence"
+      id: year
+      
+- id: categorical
+  title: "Categorical (Nominal or Ordinal)"
+  items:
+    - content: "[Country by population rank](https://www.cia.gov/library/publications/the-world-factbook/fields/335rank.html) (China first, then India, etc.)"
+      id: pop_rank
+```
+
+`@sct`
+```{python}
+checks: # Individual checks and custom messages per item. This is optional. Without it, it will check that the options are as in the solution code.
+  - condition: check_target(height_m) == ratio 
+    incorrectMessage: "You can meaningfully say that somebody is twice as high as somebody else"
+  - condition: check_target(height_ft) == ratio 
+    incorrectMessage: "You can meaningfully say that somebody is twice as high as somebody else"
+  - condition: check_target(temp_c) == interval 
+    incorrectMessage: "There is no meaningful zero in centigrade, so it is an interval variable"
+  - condition: check_target(year) == interval 
+    incorrectMessage: "There is no meaningful year zero, so it is an interval variable"    
+  - condition: check_target(pop_rank) == categorical 
+    incorrectMessage: "Subtraction is meaningless, the difference between the US and India is not the same as the difference between India and China"    
+successMessage: "Congratulations" # Message shown when all is correct.
+failureMessage: "Try again!" # Message shown when there are errors (and there is no specific error available).
+isOrdered: false # Should the items in the zones be ordered as in the solution code?
+```
+
+---
+
 ## Read data
 
 ```yaml
