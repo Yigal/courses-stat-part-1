@@ -97,11 +97,11 @@ checks: # Individual checks and custom messages per item. This is optional. With
     incorrectMessage: "A yuan is divided into 100 fen (similar to how a dollar is divided into a hundred cents), but as there are no coins smaller than one fen, the price would always be an integer number of fens. An integer number is a discrete quantity"
   - condition: check_target(rank) == cat_ordinal
     incorrectMessage: "Military ranks have an order. A general outranks a captain, which outranks a sergeant, which outranks a private"
-- condition: check_target(grade) == cat_ordinal
+  - condition: check_target(grade) == cat_ordinal
     incorrectMessage: "A letter grade of A is better than B, which is better than C, etc."
-- condition: check_target(country) == cat_nominal
+  - condition: check_target(country) == cat_nominal
     incorrectMessage: "Names don't have an inherent order, so it is categorical nominal"
-- condition: check_target(currency) == cat_nominal
+  - condition: check_target(currency) == cat_nominal
     incorrectMessage: "Names don't have an inherent order, so it is categorical nominal"
     
 successMessage: "Congratulations" # Message shown when all is correct.
