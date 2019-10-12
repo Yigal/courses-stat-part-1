@@ -240,7 +240,7 @@ url = "https://assets.datacamp.com/production/repositories/5459/datasets/fa19780
 ```yaml
 type: NormalExercise
 key: cb246fe64e
-xp: 100
+xp: 50
 ```
 
 `@instructions`
@@ -277,4 +277,42 @@ s=requests.get(url).text
 housingData=pd.read_csv(StringIO(s))
 
 Ex().check_df("housingData").equals(housingData)
+```
+
+***
+
+```yaml
+type: NormalExercise
+key: dbd92105cd
+xp: 50
+```
+
+`@instructions`
+The next step is to get the list of variables, the list of elements in `housingData`. Create a dictionary (`housingColumns`) whose keys are the column names and the values the types (identified by pandas' `infer_types`).
+
+`@hint`
+Use the pandas documentation. 
+
+- To get [the list of columns](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html#function-application-groupby-window)
+- To [infer the data type](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.api.types.infer_dtype.html)
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+housingColumns = {}
+
+cols = housingData.columns
+for col in cols:
+  housingColumns[col] = pd.api.types.infer_dtype(housingData[col])
+  
+ 
+```
+
+`@sct`
+```{python}
+# Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.
 ```
