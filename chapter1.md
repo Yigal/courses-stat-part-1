@@ -193,6 +193,34 @@ isOrdered: false # Should the items in the zones be ordered as in the solution c
 
 ---
 
+## Insert exercise title here
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 84cfed756b
+xp: 50
+```
+
+What variable type is the difference between two interval variables? For example, the change in temperature between one day and the next?
+
+`@hint`
+Interval variables can be meaningfully subtracted from each other, but not meaningfully divided, and there is no meaningful zero. Ratio variables have a meaningful zero and can be divided.
+
+`@possible_answers`
+- Ratio
+- Interval
+- Ordinal
+- Nominal
+
+`@feedback`
+<!-- Examples of good feedback messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.  -->
+- Exactly
+- Change always has a meaningful zero, no change - so it is a ratio variable, not an interval one.
+- It's a quantitative variable, not a categorical one
+- It's a quantitative variable, not a categorical one
+
+---
+
 ## Read data
 
 ```yaml
