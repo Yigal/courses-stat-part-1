@@ -1,5 +1,5 @@
 ---
-title: 'Chapter Title Here'
+title: 'Types of Data'
 description: 'Chapter description goes here.'
 ---
 
@@ -40,3 +40,16 @@ This is an example exercise.
 ```{python}
 
 ```
+
+---
+
+## Variable Types
+
+```yaml
+type: VideoExercise
+key: ab1a5203c7
+xp: 50
+```
+
+`@projector_key`
+11614ef99ebdf40b629637458e8ee6b2
