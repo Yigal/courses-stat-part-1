@@ -49,8 +49,6 @@ xp: 100
 - id: variables
   title: "Variables" # Title of your zone This is not shown with more than 2 zones.
 
-# You can keep adding drop zones to sort to.
-# This example has 2 zones.
 - id: quant_cont
   title: "Quantitative Continuous"
   items: # Each drop zone has a list of items it contains. These will be shown in a random fashion.
