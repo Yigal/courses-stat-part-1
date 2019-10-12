@@ -220,36 +220,34 @@ Interval variables can be meaningfully subtracted from each other, but not meani
 
 ---
 
-## Read data
+## Read a CSV and classify the variables
 
 ```yaml
-type: NormalExercise
-key: 2b3a3c607d
+type: TabExercise
+key: f5d243d6e2
 xp: 100
 ```
 
-<!-- Guidelines for contexts: https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
-
-`@instructions`
-<!-- Guidelines for instructions https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
-- Instruction 1
-- Instruction 2
-
-`@hint`
-<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
-- This is an example hint.
-- This is an example hint.
+In this exercise you read housing price data and classify the field types using the `pandas` package.
 
 `@pre_exercise_code`
 ```{python}
-import pandas as pd
-import io
-import requests
-url="https://drive.google.com/file/d/1r5jalTyVczE5VCFND0VHpNxlnpjyJjDd"
-s=requests.get(url).content
-c=pd.read_csv(io.StringIO(s.decode('utf-8')))
-
+url = "https://assets.datacamp.com/production/repositories/5459/datasets/fa19780a7b011d9b009e8bff8e99922a8ee2eb90/housing_prices_data.csv"
 ```
+
+***
+
+```yaml
+type: NormalExercise
+key: cb246fe64e
+xp: 100
+```
+
+`@instructions`
+The URL for the information is in the variable `url`. In this step you read this information from that URL to a pandas data frame called `housingData`. The procedure to do this is [documented here](https://stackoverflow.com/questions/32400867/pandas-read-csv-from-url)
+
+`@hint`
+
 
 `@sample_code`
 ```{python}
@@ -258,10 +256,25 @@ c=pd.read_csv(io.StringIO(s.decode('utf-8')))
 
 `@solution`
 ```{python}
+from io import StringIO
+
+import pandas as pd
+import requests
+s=requests.get(url).text
+
+housingData=pd.read_csv(StringIO(s))
 
 ```
 
 `@sct`
 ```{python}
-# Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.
+from io import StringIO
+
+import pandas as pd
+import requests
+s=requests.get(url).text
+
+housingData=pd.read_csv(StringIO(s))
+
+Ex().check_df("housingData").equals(housingData)
 ```
