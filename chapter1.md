@@ -81,7 +81,7 @@ xp: 100
 import pandas as pd
 import io
 import requests
-url="https://drive.google.com/file/d/1r5jalTyVczE5VCFND0VHpNxlnpjyJjDd/view"
+url="https://drive.google.com/file/d/1r5jalTyVczE5VCFND0VHpNxlnpjyJjDd"
 s=requests.get(url).content
 c=pd.read_csv(io.StringIO(s.decode('utf-8')))
 
