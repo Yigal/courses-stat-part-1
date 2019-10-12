@@ -109,6 +109,19 @@ isOrdered: false # Should the items in the zones be ordered as in the solution c
 
 ---
 
+## Interval vs. ratio lecture
+
+```yaml
+type: VideoExercise
+key: bf6e9857d5
+xp: 50
+```
+
+`@projector_key`
+9489802b0c0bc69fb9994eeb781831d3
+
+---
+
 ## Read data
 
 ```yaml
