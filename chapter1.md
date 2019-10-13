@@ -192,7 +192,7 @@ isOrdered: false # Should the items in the zones be ordered as in the solution c
 
 ---
 
-## Insert exercise title here
+## Thinking exercise
 
 ```yaml
 type: PureMultipleChoiceExercise
