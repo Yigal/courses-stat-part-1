@@ -341,8 +341,13 @@ The pandas library can tell us if a variable is an `integer`, a `string`, etc. H
 
 `@sct`
 ```{python}
-# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
-return true
+msg1 = "Although this is listed in the _Zen of Python_, it is not the 7th idiom."
+msg2 = "Yes, we prefer beautiful code over ugly code, but this isn't the idiom we are looking for."
+msg3 = "That's correct! Python has a design philosophy that emphasizes readability. Throughout the course, we'll see that writing efficient Python code goes hand in hand with writing code that is easy to understand. Faster code is good, but faster & readable code is best!"
+msg4 = "We do love Python, but this isn't listed in the idioms of the _Zen of Python_."
+
+Ex().has_chosen(correct=3, msgs = [msg1, msg2, msg3, msg4])
+
 ```
 
 ***
