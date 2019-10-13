@@ -240,7 +240,7 @@ url = "https://assets.datacamp.com/production/repositories/5459/datasets/fa19780
 ```yaml
 type: NormalExercise
 key: cb246fe64e
-xp: 50
+xp: 15
 ```
 
 `@instructions`
@@ -284,7 +284,7 @@ Ex().check_df("housingData").equals(housingData)
 ```yaml
 type: NormalExercise
 key: dbd92105cd
-xp: 50
+xp: 15
 ```
 
 `@instructions`
@@ -315,4 +315,139 @@ for col in cols:
 `@sct`
 ```{python}
 # Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.
+```
+
+***
+
+```yaml
+type: MultipleChoiceExercise
+key: 33082a4544
+xp: 15
+```
+
+`@question`
+The pandas library can tell us if a variable is an `integer`, a `string`, etc. However, to identify what type of variable it is (and therefore what types analysis we can do on it) we need domain knowledge. Use your domain knowledge and the information you obtained to identify what types of variable is `TotalBsmtSF`.
+
+`@possible_answers`
+- [Quantitative continuous ratio]
+- Quantitative continuous interval
+- Quantitative discrete ratio
+- Quantitative discrete interval
+- Categorical ordinal
+- Categorical nominal
+
+`@hint`
+
+
+`@sct`
+```{python}
+# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
+```
+
+***
+
+```yaml
+type: MultipleChoiceExercise
+key: 586dac5f22
+xp: 15
+```
+
+`@question`
+What type of variable is `Id`?
+
+`@possible_answers`
+- [Categorical nominal]
+- Quantitative continuous ratio
+- Quantitative continuous interval
+- Quantitative discrete ratio
+- Quantitative discrete interval
+- Categorical ordinal
+
+`@hint`
+
+
+`@sct`
+```{python}
+# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
+```
+
+***
+
+```yaml
+type: MultipleChoiceExercise
+key: 42a8ae4164
+xp: 15
+```
+
+`@question`
+What type of variable is `YearBuilt`?
+
+`@possible_answers`
+- [Quantitative discrete interval]
+- Quantitative continuous ratio
+- Quantitative continuous interval
+- Quantitative discrete ratio
+- Categorical ordinal
+- Categorical nominal
+
+`@hint`
+
+
+`@sct`
+```{python}
+# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
+```
+
+***
+
+```yaml
+type: MultipleChoiceExercise
+key: 308debd851
+xp: 15
+```
+
+`@question`
+What type of variable is `BsmtExposure`?
+
+`@possible_answers`
+- [Categorical ordinal]
+- Quantitative continuous ratio
+- Quantitative continuous interval
+- Quantitative discrete ratio
+- Quantitative discrete interval
+- Categorical nominal
+
+`@hint`
+
+
+`@sct`
+```{python}
+# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
+```
+
+***
+
+```yaml
+type: MultipleChoiceExercise
+key: cb7676efe4
+xp: 10
+```
+
+`@question`
+What type of variable is `CentralAir`?
+
+`@possible_answers`
+- [Categorical nominal]
+- Quantitative continuous ratio
+- Quantitative continuous interval
+- Quantitative discrete ratio
+- Quantitative discrete interval
+- Categorical ordinal
+
+`@hint`
+
+
+`@sct`
+```{python}
+# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
 ```
