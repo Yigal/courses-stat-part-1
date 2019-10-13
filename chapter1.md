@@ -206,7 +206,7 @@ What variable type is the difference between two interval variables? For example
 Interval variables can be meaningfully subtracted from each other, but not meaningfully divided, and there is no meaningful zero. Ratio variables have a meaningful zero and can be divided.
 
 `@possible_answers`
-- Ratio
+- [Ratio]
 - Interval
 - Ordinal
 - Nominal
@@ -342,6 +342,7 @@ The pandas library can tell us if a variable is an `integer`, a `string`, etc. H
 `@sct`
 ```{python}
 # Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
+return true
 ```
 
 ***
