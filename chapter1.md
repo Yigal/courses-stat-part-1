@@ -260,22 +260,14 @@ from io import StringIO
 
 import pandas as pd
 import requests
-s=requests.get(url).text
+s = requests.get(url).text
 
-housingData=pd.read_csv(StringIO(s))
+housingData = pd.read_csv(StringIO(s))
 
 ```
 
 `@sct`
 ```{python}
-from io import StringIO
-
-import pandas as pd
-import requests
-s=requests.get(url).text
-
-housingData=pd.read_csv(StringIO(s))
-
 Ex().check_df("housingData").equals(housingData)
 ```
 
