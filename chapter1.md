@@ -268,7 +268,7 @@ housingData = pd.read_csv(StringIO(s))
 
 `@sct`
 ```{python}
-Ex().check_df("housingData").equals(pd.read_csv(StringIO(requests.get(url).text)))
+Ex().check_df("housingData").equals(housingData)
 ```
 
 ***
