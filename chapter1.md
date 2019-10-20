@@ -271,7 +271,7 @@ analyze_locs = pd.get_dummies(locations)
 
 `@sct`
 ```{python}
-# Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.
+Ex().check_object("analyze_locs").has_equal_value()
 ```
 
 ---
@@ -347,7 +347,7 @@ xp: 15
 ```
 
 `@instructions`
-The URL for the information is in the variable `url`. In this step you read this information from that URL to a pandas data frame called `housingData`. The procedure to do this is [documented here](https://stackoverflow.com/questions/32400867/pandas-read-csv-from-url)
+The URL for the information is in the variable `url`. In this step you read this information from that URL to a pandas data frame called `housingData`. The procedure to do this is [documented here](https://stackoverflow.com/questions/32400867/pandas-read-csv-from-url). After you read it, print the data frame.
 
 `@hint`
 
@@ -366,6 +366,8 @@ import requests
 s = requests.get(url).text
 
 housingData = pd.read_csv(StringIO(s))
+
+print(housingData)
 
 ```
 
