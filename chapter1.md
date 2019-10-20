@@ -443,7 +443,7 @@ The pandas library can tell us if a variable is an `integer`, a `string`, etc. H
 
 `@sct`
 ```{python}
-Ex().has_chosen(correct = 1)
+Ex().has_chosen(1)
 ```
 
 ***
