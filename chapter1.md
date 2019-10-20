@@ -297,7 +297,7 @@ key: 1d376955a1
 xp: 50
 ```
 
-The variable `power_usage` contains a pandas dataframe with the power used at different points in time. The points at in chronological order, but at different intervals. Assuming that the power is constant between measurements and that before the first measurement and after the last measurement no power was used, what was the total power consumption in kWh? 
+The variable `power_usage` contains a pandas dataframe with the power used at different points in time. The points at in chronological order, but at different intervals. Assuming that the power is constant between measurements and that before the first measurement and after the last measurement no power was used, what was the total power consumption in kWh?
 
 `@possible_answers`
 - [Correct answer 1]
