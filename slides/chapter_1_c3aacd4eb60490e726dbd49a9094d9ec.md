@@ -3,7 +3,7 @@ key: c3aacd4eb60490e726dbd49a9094d9ec
 title: 'Insert title here'
 ---
 
-## Nominal Variables and Machine Learning
+## Nominal variables and machine learning
 
 ```yaml
 type: TitleSlide

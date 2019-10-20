@@ -220,7 +220,7 @@ Interval variables can be meaningfully subtracted from each other, but not meani
 
 ---
 
-## Nominal Variables and Machine Learning
+## Nominal variables and machine learning
 
 ```yaml
 type: VideoExercise
