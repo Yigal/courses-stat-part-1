@@ -220,6 +220,62 @@ Interval variables can be meaningfully subtracted from each other, but not meani
 
 ---
 
+## Nominal Variables and Machine Learning
+
+```yaml
+type: VideoExercise
+key: b5fe58bcde
+xp: 50
+```
+
+`@projector_key`
+c3aacd4eb60490e726dbd49a9094d9ec
+
+---
+
+## Convert Nominal Variable to Separate Variables
+
+```yaml
+type: NormalExercise
+key: 3d69de0630
+xp: 100
+```
+
+
+
+`@instructions`
+A pandas data frame with two nominal variables (`city` and `country`) is provided in the variable `locations`. Use the pandas method [`get_dummies`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.get_dummies.html) to create a data frame called `analyze_locs` with both nominal variables separated into different values.
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{python}
+import pandas as pd
+
+locations = pd.DataFrame(data={'city': ['New York', 'Los Angeles', 'Haifa', 'Tel Aviv', 'London', 'Paris'],
+                              'country':['US', 'US', 'Israel', 'Israel', 'UK', 'France']})
+
+
+```
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+analyze_locs = pd.get_dummies(locations)
+```
+
+`@sct`
+```{python}
+# Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.
+```
+
+---
+
 ## Read a CSV and classify the variables
 
 ```yaml
