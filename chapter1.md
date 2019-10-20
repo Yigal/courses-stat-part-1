@@ -552,3 +552,42 @@ What type of variable is `CentralAir`?
 ```{python}
 # Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
 ```
+
+---
+
+## Testing SCTs
+
+```yaml
+type: NormalExercise
+key: a330323172
+xp: 100
+```
+
+<!-- Guidelines for contexts: https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
+
+`@instructions`
+Test, return `a=5`
+
+`@hint`
+Read https://pythonwhat.readthedocs.io/en/latest/articles/checking_function_calls.html
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+print(5)
+```
+
+`@sct`
+```{python}
+Ex().has_equal_output()
+success_msg("blah blah blah")
+```
