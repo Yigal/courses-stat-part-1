@@ -12,7 +12,7 @@ key: 523152d9ca
 
 `@lower_third`
 name: Ori Pomerantz
-title: 
+title: Instructor
 
 `@script`
 
