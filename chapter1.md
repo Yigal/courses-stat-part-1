@@ -366,14 +366,11 @@ import requests
 s = requests.get(url).text
 
 housingData = pd.read_csv(StringIO(s))
-
-print(housingData)
-
 ```
 
 `@sct`
 ```{python}
-Ex().check_df("housingData").equals(housingData)
+Ex().check_object("housingData").has_equal_value()
 ```
 
 ***
@@ -400,6 +397,14 @@ Use the pandas documentation.
 
 `@solution`
 ```{python}
+from io import StringIO
+
+import pandas as pd
+import requests
+s = requests.get(url).text
+
+housingData = pd.read_csv(StringIO(s))
+
 housingColumns = {}
 
 cols = housingData.columns
@@ -411,7 +416,7 @@ for col in cols:
 
 `@sct`
 ```{python}
-# Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages.
+Ex().check_object("housingColumns").has_equal_value()
 ```
 
 ***
@@ -438,13 +443,7 @@ The pandas library can tell us if a variable is an `integer`, a `string`, etc. H
 
 `@sct`
 ```{python}
-msg1 = "Although this is listed in the _Zen of Python_, it is not the 7th idiom."
-msg2 = "Yes, we prefer beautiful code over ugly code, but this isn't the idiom we are looking for."
-msg3 = "That's correct! Python has a design philosophy that emphasizes readability. Throughout the course, we'll see that writing efficient Python code goes hand in hand with writing code that is easy to understand. Faster code is good, but faster & readable code is best!"
-msg4 = "We do love Python, but this isn't listed in the idioms of the _Zen of Python_."
-
-Ex().has_chosen(correct=3, msgs = [msg1, msg2, msg3, msg4])
-
+Ex().has_chosen(correct = 1)
 ```
 
 ***
@@ -459,19 +458,19 @@ xp: 15
 What type of variable is `Id`?
 
 `@possible_answers`
-- [Categorical nominal]
 - Quantitative continuous ratio
 - Quantitative continuous interval
 - Quantitative discrete ratio
 - Quantitative discrete interval
 - Categorical ordinal
+- [Categorical nominal]
 
 `@hint`
 
 
 `@sct`
 ```{python}
-# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
+Ex().has_chosen(6)
 ```
 
 ***
@@ -486,10 +485,10 @@ xp: 15
 What type of variable is `YearBuilt`?
 
 `@possible_answers`
-- [Quantitative discrete interval]
 - Quantitative continuous ratio
 - Quantitative continuous interval
 - Quantitative discrete ratio
+- [Quantitative discrete interval]
 - Categorical ordinal
 - Categorical nominal
 
@@ -498,7 +497,7 @@ What type of variable is `YearBuilt`?
 
 `@sct`
 ```{python}
-# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
+Ex.has_chosen(4)
 ```
 
 ***
@@ -513,11 +512,11 @@ xp: 15
 What type of variable is `BsmtExposure`?
 
 `@possible_answers`
-- [Categorical ordinal]
 - Quantitative continuous ratio
 - Quantitative continuous interval
 - Quantitative discrete ratio
 - Quantitative discrete interval
+- [Categorical ordinal]
 - Categorical nominal
 
 `@hint`
@@ -525,7 +524,7 @@ What type of variable is `BsmtExposure`?
 
 `@sct`
 ```{python}
-# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
+Ex.has_chosen(5)
 ```
 
 ***
@@ -540,56 +539,17 @@ xp: 10
 What type of variable is `CentralAir`?
 
 `@possible_answers`
-- [Categorical nominal]
 - Quantitative continuous ratio
 - Quantitative continuous interval
 - Quantitative discrete ratio
 - Quantitative discrete interval
 - Categorical ordinal
+- [Categorical nominal]
 
 `@hint`
 
 
 `@sct`
 ```{python}
-# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
-```
-
----
-
-## Testing SCTs
-
-```yaml
-type: NormalExercise
-key: a330323172
-xp: 100
-```
-
-<!-- Guidelines for contexts: https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
-
-`@instructions`
-Test, return `a=5`
-
-`@hint`
-Read https://pythonwhat.readthedocs.io/en/latest/articles/checking_function_calls.html
-
-`@pre_exercise_code`
-```{python}
-
-```
-
-`@sample_code`
-```{python}
-
-```
-
-`@solution`
-```{python}
-print(5)
-```
-
-`@sct`
-```{python}
-Ex().has_equal_output()
-success_msg("blah blah blah")
+Ex.has_chosen(6)
 ```
