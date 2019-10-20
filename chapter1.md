@@ -276,6 +276,53 @@ analyze_locs = pd.get_dummies(locations)
 
 ---
 
+## Time variables
+
+```yaml
+type: VideoExercise
+key: aeba89526c
+xp: 50
+```
+
+`@projector_key`
+5bb70b1c97c7381acaa8eff897394c9a
+
+---
+
+## Time series calculation
+
+```yaml
+type: MultipleChoiceExercise
+key: 1d376955a1
+xp: 50
+```
+
+The variable `power_usage` contains a pandas dataframe with the power used at different points in time. The points at in chronological order, but at different intervals. Assuming that the power is constant between measurements and that before the first measurement and after the last measurement no power was used, what was the total power consumption in kWh? 
+
+`@possible_answers`
+- [Correct answer 1]
+- Wrong answer 2
+- Wrong answer 3
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{python}
+import pandas as pd
+
+power_usage = pd.DataFrame(data={
+  'time': ['2019-10-01 02:00:00', '2019-10-01 03:15:00', '2019-10-01 08:03:15', '2019-10-01 14:12:55', '2019-10-01 17:11:45', '2019-10-01 20:00:15'],
+  'kW': [50, 100, 150, 175, 215, 75]})
+```
+
+`@sct`
+```{python}
+# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
+```
+
+---
+
 ## Read a CSV and classify the variables
 
 ```yaml
@@ -500,53 +547,6 @@ What type of variable is `CentralAir`?
 
 `@hint`
 
-
-`@sct`
-```{python}
-# Check https://instructor-support.datacamp.com/en/articles/2375523-course-multiple-choice-with-console-exercises on how to write feedback messages for this exercise.
-```
-
----
-
-## Time variables
-
-```yaml
-type: VideoExercise
-key: aeba89526c
-xp: 50
-```
-
-`@projector_key`
-5bb70b1c97c7381acaa8eff897394c9a
-
----
-
-## Time series calculation
-
-```yaml
-type: MultipleChoiceExercise
-key: 1d376955a1
-xp: 50
-```
-
-The variable `power_usage` contains a pandas dataframe with the power used at different points in time. The points at in chronological order, but at different intervals. Assuming that the power is constant between measurements and that before the first measurement and after the last measurement no power was used, what was the total power consumption in kWh? 
-
-`@possible_answers`
-- [Correct answer 1]
-- Wrong answer 2
-- Wrong answer 3
-
-`@hint`
-
-
-`@pre_exercise_code`
-```{python}
-import pandas as pd
-
-power_usage = pd.DataFrame(data={
-  'time': ['2019-10-01 02:00:00', '2019-10-01 03:15:00', '2019-10-01 08:03:15', '2019-10-01 14:12:55', '2019-10-01 17:11:45', '2019-10-01 20:00:15'],
-  'kW': [50, 100, 150, 175, 215, 75]})
-```
 
 `@sct`
 ```{python}
