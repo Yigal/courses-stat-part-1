@@ -300,9 +300,11 @@ xp: 50
 The variable `power_usage` contains a pandas dataframe with the power used at different points in time. The points at in chronological order, but at different intervals. Assuming that the power is constant between measurements and that before the first measurement and after the last measurement no power was used, what was the total power consumption in kWh?
 
 `@possible_answers`
-- [Correct answer 1]
-- Wrong answer 2
-- Wrong answer 3
+- 2259
+- [2592]
+- 2952
+- 2529
+- 5292
 
 `@hint`
 
@@ -431,7 +433,7 @@ xp: 15
 The pandas library can tell us if a variable is an `integer`, a `string`, etc. However, to identify what type of variable it is (and therefore what types analysis we can do on it) we need domain knowledge. Use your domain knowledge and the information you obtained to identify what types of variable is `TotalBsmtSF`.
 
 `@possible_answers`
-- [Quantitative continuous ratio]
+- Quantitative continuous ratio
 - Quantitative continuous interval
 - Quantitative discrete ratio
 - Quantitative discrete interval
