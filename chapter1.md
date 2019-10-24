@@ -27,7 +27,8 @@ calculate_mean = [num1,num2,num3,num4,num5]
 
 `@hint`
 <!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
-- This is an example hint.
+- Simply add into a summation variable and divide by the size in the script on the top-right (not in the Shell) and hit 'Submit Answer'.
+
 - This is an example hint.
 
 `@pre_exercise_code`
@@ -53,7 +54,8 @@ mean_of_numbers = sum_of_numbers /= len(calculate_mean)
 `@sct`
 ```{python}
 # Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages
-Ex().check_object("mean_of_numbers").has_equal_value(7)
+Ex().has_printout(1, not_printed_msg = "__JINJA__:Have you used `{{sol_call}}` to print out the sum of 7 and 10?")
+success_msg("Great! On to the next one!")
 
 ```
 
