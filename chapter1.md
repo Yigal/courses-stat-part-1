@@ -3,6 +3,62 @@ title: 'Types of Data'
 description: 'Chapter description goes here.'
 ---
 
+## Introduction
+
+```yaml
+type: NormalExercise
+key: efbf8e2f51
+xp: 100
+```
+
+Welcome to Statistics Online Course
+
+First we will introduce the system
+
+`@instructions`
+**Data Camp Platform**
+- This platform incorporates both video lectures exercises and hosted python kernel.
+- To familiarise yourself with the python platform lets start with an easy excessive.
+- You are given a python list that contains 5 floating-point objects and your goal is to calculate the mean
+- The list is initiated by the following code
+```
+calculate_mean = [num1,num2,num3,num4,num5]
+```
+
+`@hint`
+<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
+- This is an example hint.
+- This is an example hint.
+
+`@pre_exercise_code`
+```{python}
+calculate_mean = [6, 7, 8, 9, 13]
+
+```
+
+`@sample_code`
+```{python}
+for x in calculate_mean:
+  print(x)
+```
+
+`@solution`
+```{python}
+sum_of_numbers = 0
+for x in calculate_mean:
+  sum_of_numbers += x
+mean_of_numbers = sum_of_numbers /= len(calculate_mean)
+```
+
+`@sct`
+```{python}
+# Examples of good success messages: https://instructor-support.datacamp.com/en/articles/2299773-exercise-success-messages
+Ex().check_object("mean_of_numbers").has_equal_value(7)
+
+```
+
+---
+
 ## Variable types lecture
 
 ```yaml
