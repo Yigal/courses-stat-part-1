@@ -32,7 +32,7 @@ key: 2fa5a0872c
 this is written in part one 		
 
 `@part2`
-This is written in part two	![https://assets.datacamp.com/production/repositories/5459/datasets/226a20de379f021f4efd5fdf3b7339af7146d63b/2019-10-24_1126.png]()
+This is written in part two	![itc_logo](https://assets.datacamp.com/production/repositories/5459/datasets/226a20de379f021f4efd5fdf3b7339af7146d63b/2019-10-24_1126.png)
 
 `@script`
 
