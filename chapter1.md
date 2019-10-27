@@ -620,3 +620,16 @@ What type of variable is `CentralAir`?
 ```{python}
 Ex.has_chosen(6)
 ```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: VideoExercise
+key: 75c243fa1a
+xp: 50
+```
+
+`@projector_key`
+d80450da7d4ea87ecfde8aa82367a3a7
