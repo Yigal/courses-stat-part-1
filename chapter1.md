@@ -3,6 +3,19 @@ title: 'Types of Data'
 description: 'Chapter description goes here.'
 ---
 
+## Statistics
+
+```yaml
+type: VideoExercise
+key: 75c243fa1a
+xp: 50
+```
+
+`@projector_key`
+d80450da7d4ea87ecfde8aa82367a3a7
+
+---
+
 ## Introduction
 
 ```yaml
@@ -620,16 +633,3 @@ What type of variable is `CentralAir`?
 ```{python}
 Ex.has_chosen(6)
 ```
-
----
-
-## Statistics
-
-```yaml
-type: VideoExercise
-key: 75c243fa1a
-xp: 50
-```
-
-`@projector_key`
-d80450da7d4ea87ecfde8aa82367a3a7
