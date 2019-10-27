@@ -623,7 +623,7 @@ Ex.has_chosen(6)
 
 ---
 
-## Insert exercise title here
+## Statistics
 
 ```yaml
 type: VideoExercise
